@@ -12,7 +12,7 @@ const tickets = [
   },
 ];
 
-test('Reto10', () => {
+test('Reto11', () => {
   for (let ticket of tickets) {
     expect(shouldBuyFidelity(ticket.times)).toStrictEqual(ticket.result);
   }
