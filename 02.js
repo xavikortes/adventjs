@@ -1,4 +1,4 @@
-// https://adventjs.dev/challenges/01
+// https://adventjs.dev/challenges/02
 
 function listGifts(letter) {
   return letter
