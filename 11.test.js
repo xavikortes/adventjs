@@ -14,6 +14,6 @@ const tickets = [
 
 test('Reto11', () => {
   for (let ticket of tickets) {
-    expect(shouldBuyFidelity(ticket.times)).toStrictEqual(ticket.result);
+    expect(shouldBuyFidelity(ticket.times)).toBe(ticket.result);
   }
 });

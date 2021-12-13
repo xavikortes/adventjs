@@ -26,6 +26,6 @@ const obstacles = [
 
 test('Reto12', () => {
   for (let obstacle of obstacles) {
-    expect(getMinJump(obstacle.obstaculos)).toStrictEqual(obstacle.result);
+    expect(getMinJump(obstacle.obstaculos)).toBe(obstacle.result);
   }
 });
