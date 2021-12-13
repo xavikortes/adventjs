@@ -1,7 +1,7 @@
 const daysToXmas = require("./05.js")
 const { test, expect } = require("@jest/globals")
 
-const ejemplos = [
+const fechas = [
   { date: new Date('Dec 1, 2021'), days: 24 },
   { date: new Date('Dec 24, 2021 00:00:01'), days: 1 },
   { date: new Date('Dec 24, 2021 23:59:59'), days: 1 },
@@ -9,7 +9,7 @@ const ejemplos = [
 ]
 
 test('Reto05', () => {
-  for (let ejemplo of ejemplos) {
-    expect(daysToXmas(ejemplo.date)).toBe(ejemplo.days)
+  for (let fecha of fechas) {
+    expect(daysToXmas(fecha.date)).toBe(fecha.days)
   }
 })

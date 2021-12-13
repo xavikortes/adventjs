@@ -1,7 +1,7 @@
 const createXmasTree = require("./04.js")
 const { test, expect } = require("@jest/globals")
 
-const ejemplos = [
+const arboles = [
   { height: 1, tree: [
     '*',
     '#',
@@ -40,7 +40,7 @@ const ejemplos = [
 ]
 
 test('Reto04', () => {
-  for (let ejemplo of ejemplos) {
-    expect(createXmasTree(ejemplo.height)).toBe(ejemplo.tree.join('\n'))
+  for (let arbol of arboles) {
+    expect(createXmasTree(arbol.height)).toBe(arbol.tree.join('\n'))
   }
 })

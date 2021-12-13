@@ -1,7 +1,7 @@
 const isValid = require("./03.js")
 const { test, expect } = require("@jest/globals")
 
-const ejemplos = [
+const cartas = [
   { letter: "bici coche (balón) bici coche peluche", valid: true },
   { letter: "bici coche (balón bici coche", valid: false },
   { letter: "(muñeca) consola bici", valid: true },
@@ -13,7 +13,7 @@ const ejemplos = [
 ]
 
 test('Reto03', () => {
-  for (let ejemplo of ejemplos) {
-    expect(isValid(ejemplo.letter)).toBe(ejemplo.valid)
+  for (let carta of cartas) {
+    expect(isValid(carta.letter)).toBe(carta.valid)
   }
 })
