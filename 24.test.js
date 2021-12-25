@@ -31,7 +31,7 @@ const combinations = [
   },
 ];
 
-test('Reto23', () => {
+test('Reto24', () => {
   for (let combination of combinations) {
     expect(checkIsSameTree(combination.a, combination.b)).toBe(combination.result);
   }
